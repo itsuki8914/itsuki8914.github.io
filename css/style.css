@@ -1,0 +1,91 @@
+@import url(sanitize.css);
+
+body{
+  background-color: #346;
+  padding: 10px;
+  color: #eee;
+}
+
+.container{
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
+}
+
+header{
+  background-color: #eeeeee;
+  padding: 10px;
+  color: #246;
+  border-radius: 10px;
+}
+
+h1{
+  font-size: 36px;
+  margin: auto;
+  font-weight: normal;
+  text-align: center;
+}
+
+h2{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+p{
+  font-size: 16px;
+}
+
+.jump{
+  padding: 15px 70px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+
+    border-radius: 5px;
+}
+
+.jump:hover{
+  background-color: #3696f3;
+}
+
+.description img.except{
+    float: left;
+    margin: 0 50px 10px 0;
+    width: 256px;
+    height: 256px;
+    -webkit-transition: all .3s;
+}
+
+.description img:not(.except){
+    float: left;
+    margin: 0 50px 10px 0;
+    width: 256px;
+    height: 256px;
+    -webkit-transition: all .3s;
+    /*transition: all 3s;*/
+}
+
+.description img:hover:not(.except){
+  background-color: transparent;
+  border-radius: 30px;
+}
+
+.footer{
+    float: right;
+    margin: 0 0 0 0;
+}
+
+.clearfix::after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+a.jump{
+  color: #eee;
+}
+
+a.return{
+  color: #eee;
+}
