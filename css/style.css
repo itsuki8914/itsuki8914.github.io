@@ -36,13 +36,15 @@ p{
 }
 
 .jump{
-  padding: 15px 70px;
+  padding: 15px 50px;
     display: inline-block;
     text-decoration: none;
     font-weight: normal;
     font-size: 20px;
-
     border-radius: 5px;
+    text-align: center;
+    -webkit-transition: all .1s;
+    width: 250px;
 }
 
 .jump:hover{
@@ -51,7 +53,7 @@ p{
 
 .description img.except{
     float: left;
-    margin: 0 50px 10px 0;
+    margin: 0px 50px 10px 0px;
     width: 256px;
     height: 256px;
     -webkit-transition: all .3s;
@@ -63,12 +65,11 @@ p{
     width: 256px;
     height: 256px;
     -webkit-transition: all .3s;
-    /*transition: all 3s;*/
 }
 
 .description img:hover:not(.except){
   background-color: transparent;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 .footer{
@@ -88,4 +89,39 @@ a.jump{
 
 a.return{
   color: #eee;
+}
+
+@media screen and (max-width:600px){
+
+  .innerlink{
+    text-align: center;
+  }
+
+  .description{
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .description img.except{
+      float: none;
+      margin: 0 auto;
+      width: 256px;
+      height: 256px;
+  }
+
+  .description img:not(.except){
+      float: none;
+      margin: 0 auto;
+      width: 256px;
+      height: 256px;
+  }
+  .description h2{
+    text-align:center;
+  }
+  .description p{
+    text-align:center;
+  }
 }
